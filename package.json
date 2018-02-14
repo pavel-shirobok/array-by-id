@@ -1,0 +1,27 @@
+{
+  "name": "typed-collector",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "start": "./node_modules/.bin/ts-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Shirobok Pavel <pavel.shirobok@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "@types/node": "^9.4.5",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.7.1"
+  },
+  "dependencies": {}
+}
