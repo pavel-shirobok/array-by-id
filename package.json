@@ -1,7 +1,7 @@
 {
   "name": "array-by-id",
-  "version": "0.0.2",
-  "description": "",
+  "version": "0.0.3",
+  "description": "Revolution in working with the arrays",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
