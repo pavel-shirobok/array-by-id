@@ -2,7 +2,7 @@ export interface IId{
     id : string;
 }
 
-export interface ICollector<T extends IId> {
+export interface IArrayById<T extends IId> {
     add(item : T) : T;
     getById(id:string):T;
     remove(item:T):T;
@@ -15,7 +15,7 @@ export interface ICollector<T extends IId> {
     items : T[];
 }
 
-export class Collector<T extends IId> implements ICollector<T>{
+export class ArrayById<T extends IId> implements IArrayById<T>{
     private _items : T[];
 
     constructor() {
@@ -74,8 +74,8 @@ export class Collector<T extends IId> implements ICollector<T>{
     }
 }
 
-export class ReadOnlyCollectorWrapper<T extends IId> implements ICollector<T> {
-    constructor(private source : ICollector<T>){ }
+export class ReadOnlyArrayByIdWrapper<T extends IId> implements IArrayById<T> {
+    constructor(private source : IArrayById<T>){ }
 
     add(item: T): T {
         throw new Error("Read only");
